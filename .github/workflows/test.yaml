@@ -1,9 +1,9 @@
-name: build and run                # собрать и запустить
+name: basic                        # собрать и запустить
 on: [push]                         # в какой момент запускать (в данном случае при вызове push)
 jobs:                              # словарь
-  build and run:                   # ключ
+  build:                           # ключ
     runs-on: ubuntu-latest         # значение
-    steps:                        # этапы
+    steps:                         # этапы
       -uses: actions/checkout      # файл из репозитория загрузить на машину
       -run: g++ main.cpp func.cpp -o main
       -run: ./main 4 6
