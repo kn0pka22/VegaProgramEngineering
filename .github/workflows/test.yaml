@@ -4,6 +4,6 @@ jobs:                              # словарь
   build:                           # ключ
     runs-on: ubuntu-latest         # значение
     steps:                         # этапы
-      -uses: actions/checkout      # файл из репозитория загрузить на машину
+      -uses: actions/checkout@v4   # файл из репозитория загрузить на машину
       -run: g++ main.cpp func.cpp -o main
       -run: ./main 4 6
