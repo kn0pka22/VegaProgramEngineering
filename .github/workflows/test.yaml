@@ -7,7 +7,7 @@ jobs:                              # словарь
       - uses: actions/checkout@v4  # файл из репозитория загрузить на машину
       - run: sudo apt-get update && sudo apt-get install -y cmake
       - run: mkdir build && cmake -B build -S . && cmake --build build
-      - uses: actions/upload-artifactv4
+      - uses: actions/upload-artifact@v4
         with:
           name: binaries
           path: |
@@ -19,7 +19,7 @@ jobs:                              # словарь
 tests:
   run-on: ubuntu-latest
   steps:
-    - uses: action/download-artifactv4
+    - uses: action/download-artifact@v4
       with:
         name: binaries
     - run: chmod +x tests && ./tests # вернуть права на исполнение файла
@@ -29,7 +29,7 @@ tests:
 run:
   run-on: ubuntu-latest
   steps:
-    - uses: action/download-artifactv4
+    - uses: action/download-artifact@v4
       with:
         name: binaries
     - run: chmod +x tests && ./main 2 7 
