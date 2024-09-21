@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.14)
 project(VegaProgramEngineering)
 
-add_executable(main main.cpp func.cpp)  # добавляет исполняемый файл, аналог -o main
+include_directories(include)
+add_executable(main main.cpp src/func.cpp)  # добавляет исполняемый файл, аналог -o main
 
 include(FetchContent)
 FetchContent_Declare(
@@ -12,7 +13,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 enable_testing()
-add_executable(tests test_add.cpp func.cpp)
+add_executable(tests test_add.cpp src/func.cpp)
 target_link_libraries(tests gtest_main)
 
 
