@@ -1,35 +1,33 @@
-name: basic                        # собрать и запустить
-on: [push]                         # в какой момент запускать (в данном случае при вызове push)
-jobs:                              # словарь
-  build:                           # ключ
-    runs-on: ubuntu-latest         # значение
-    steps:                         # этапы
-      - uses: actions/checkout@v4  # файл из репозитория загрузить на машину
+name: basic
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
       - run: sudo apt-get update && sudo apt-get install -y cmake
       - run: mkdir build && cmake -B build -S . && cmake --build build
       - uses: actions/upload-artifact@v4
         with:
           name: binaries
           path: |
-            buid/main
+            build/main
             build/tests
-      #- run: g++ main.cpp func.cpp -o main
-      #- run: ./build/tests
 
-tests:
-  run-on: ubuntu-latest
-  steps:
-    - uses: action/download-artifact@v4
-      with:
-        name: binaries
-    - run: chmod +x tests && ./tests # вернуть права на исполнение файла
+  tests:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: binaries
+      - run: chmod +x tests && ./tests
 
-
-
-run:
-  run-on: ubuntu-latest
-  steps:
-    - uses: action/download-artifact@v4
-      with:
-        name: binaries
-    - run: chmod +x tests && ./main 2 7 
+  run:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: binaries
+      - run: chmod +x main && ./main 2 7
