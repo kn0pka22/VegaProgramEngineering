@@ -9,7 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: sudo apt-get update && sudo apt-get install -y cmake g++
-    - run: mkdir build && cmake -B build -S . && cmake --build build && ls build
+    - run: mkdir build && cmake -B build -S . && cmake --build build 
+    - run: ls -la build
     - uses: actions/upload-artifact@v4
       with:
         name: binaries
