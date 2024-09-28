@@ -1,12 +1,12 @@
-name: Documentation
+name: Build and Publish Documentation
 
 on:
   push:
     branches:
-      - main  
-  pull_request:
-    branches:
-      - main  
+      - main
+
+permissions:
+  contents: write  
 
 jobs:
   build:
@@ -20,11 +20,11 @@ jobs:
         run: sudo apt-get install -y doxygen graphviz
 
       - name: Generate Documentation
-        run: doxygen docs/Doxyfile
+        run: doxygen Doxyfile
 
       - name: Publish Documentation
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/html  # Путь к сгенерированной документации
+          publish_dir: ./docs/html
           publish_branch: gh-pages
