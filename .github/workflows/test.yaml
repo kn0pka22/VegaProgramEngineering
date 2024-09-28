@@ -5,46 +5,52 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
-    - run: sudo apt-get update && sudo apt-get install -y cmake g++
-    - run: mkdir build && cmake -B build -S . && cmake --build build 
-    - run: ls -la build
-    - uses: actions/upload-artifact@v4
-      with:
-        name: binaries
-        path: |
-          build/main
-          build/tests
-          build/benchmarks  # Добавляем бенчмарки
+      - uses: actions/checkout@v4
+
+      - run: sudo apt-get update && sudo apt-get install -y cmake g++
+
+      - run: mkdir build && cmake -B build -S . && cmake --build build
+
+      - run: ls -la build  # Проверка содержимого каталога build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: binaries
+          path: |
+            build/main
+            build/tests
+            build/benchmarks  # Убедитесь, что этот файл существует
 
   tests:
     needs: build
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/download-artifact@v4
-      with:
-        name: binaries
-    - run: chmod +x tests && ./tests
+      - uses: actions/download-artifact@v4
+        with:
+          name: binaries
+
+      - run: ls -la  # Проверка содержимого каталога перед запуском тестов
+      - run: chmod +x tests && ./tests
 
   run:
     needs: build
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/download-artifact@v4
-      with:
-        name: binaries
-    - run: chmod +x main && ./main 2 7
+      - uses: actions/download-artifact@v4
+        with:
+          name: binaries
 
-  benchmarks:  # Новый job для бенчмарков
+      - run: ls -la  # Проверка содержимого каталога перед запуском main
+      - run: chmod +x main && ./main 2 7
+
+  benchmarks:
     needs: build
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/download-artifact@v4
-      with:
-        name: binaries
-    - run: chmod +x benchmarks && ./benchmarks
+      - uses: actions/download-artifact@v4
+        with:
+          name: binaries
+
+      - run: ls -la  # Проверка содержимого каталога перед запуском benchmarks
+      - run: chmod +x benchmarks && ./benchmarks
