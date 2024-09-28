@@ -52,5 +52,6 @@ jobs:
         with:
           name: binaries
 
+      - run: pwd  # Проверка текущего рабочего каталога
       - run: ls -la  # Проверка содержимого каталога перед запуском benchmarks
       - run: chmod +x benchmarks && ./benchmarks

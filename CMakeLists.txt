@@ -32,4 +32,4 @@ include(GoogleTest)
 gtest_discover_tests(tests)
 
 add_executable(benchmarks benchmark_add.cpp src/func.cpp)
-target_link_libraries(benchmarks benchmark::benchmark)
+target_link_libraries(benchmarks benchmark::benchmark benchmark::benchmark_main)
