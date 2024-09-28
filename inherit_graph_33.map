@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,228,85,255"/>
+<area shape="rect" id="node2" href="$classcompare_1_1TestParser.html" title=" " alt="" coords="189,5,339,32"/>
+<area shape="rect" id="node3" href="$classgbench_1_1report_1_1TestGetUniqueBenchmarkNames.html" title="Unit tests." alt="" coords="159,57,369,98"/>
+<area shape="rect" id="node4" href="$classgbench_1_1report_1_1TestReportDifference.html" title=" " alt="" coords="171,122,357,163"/>
+<area shape="rect" id="node5" href="$classgbench_1_1report_1_1TestReportDifferenceBetweenFamilies.html" title=" " alt="" coords="164,187,364,229"/>
+<area shape="rect" id="node6" href="$classgbench_1_1report_1_1TestReportDifferenceForPercentageAggregates.html" title=" " alt="" coords="136,253,392,294"/>
+<area shape="rect" id="node7" href="$classgbench_1_1report_1_1TestReportDifferenceWithUTest.html" title=" " alt="" coords="171,318,357,359"/>
+<area shape="rect" id="node8" href="$classgbench_1_1report_1_1TestReportDifferenceWithUTestWhileDisplayingAggregatesOnly.html" title=" " alt="" coords="133,384,395,440"/>
+<area shape="rect" id="node9" href="$classgbench_1_1report_1_1TestReportSorting.html" title=" " alt="" coords="171,465,357,506"/>
+</map>
