@@ -1,0 +1,221 @@
+\hypertarget{namespacegbench_1_1report}{}\doxysection{gbench.\+report Namespace Reference}
+\label{namespacegbench_1_1report}\index{gbench.report@{gbench.report}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgbench_1_1report_1_1BenchmarkColor}{Benchmark\+Color}}
+\item 
+class \mbox{\hyperlink{classgbench_1_1report_1_1TestGetUniqueBenchmarkNames}{Test\+Get\+Unique\+Benchmark\+Names}}
+\begin{DoxyCompactList}\small\item\em Unit tests. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classgbench_1_1report_1_1TestReportDifference}{Test\+Report\+Difference}}
+\item 
+class \mbox{\hyperlink{classgbench_1_1report_1_1TestReportDifferenceBetweenFamilies}{Test\+Report\+Difference\+Between\+Families}}
+\item 
+class \mbox{\hyperlink{classgbench_1_1report_1_1TestReportDifferenceForPercentageAggregates}{Test\+Report\+Difference\+For\+Percentage\+Aggregates}}
+\item 
+class \mbox{\hyperlink{classgbench_1_1report_1_1TestReportDifferenceWithUTest}{Test\+Report\+Difference\+With\+U\+Test}}
+\item 
+class \mbox{\hyperlink{classgbench_1_1report_1_1TestReportDifferenceWithUTestWhileDisplayingAggregatesOnly}{Test\+Report\+Difference\+With\+U\+Test\+While\+Displaying\+Aggregates\+Only}}
+\item 
+class \mbox{\hyperlink{classgbench_1_1report_1_1TestReportSorting}{Test\+Report\+Sorting}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_a935422f9f080f96a4e0b141a9a5fe399}{color\+\_\+format}} (use\+\_\+color, fmt\+\_\+str, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_a7e41e0bde62503f68727e532aa0c4000}{find\+\_\+longest\+\_\+name}} (benchmark\+\_\+list)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_ab54bf3557c03f4d6cff9508b6f19a04e}{calculate\+\_\+change}} (old\+\_\+val, new\+\_\+val)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_a4d2cf4810d465353a6e17d9217bda64b}{filter\+\_\+benchmark}} (json\+\_\+orig, family, replacement=\char`\"{}\char`\"{})
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_af0e4627970d95b1facfecd61974dac58}{get\+\_\+unique\+\_\+benchmark\+\_\+names}} (json)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_a62715b3145ef8b278588580770637704}{intersect}} (list1, list2)
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a00d55a638d92212e7342f55467764bab}\label{namespacegbench_1_1report_a00d55a638d92212e7342f55467764bab}} 
+def {\bfseries is\+\_\+potentially\+\_\+comparable\+\_\+benchmark} (x)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_a4ea8e28af8a9d6c0e0cf01a6f254ec70}{partition\+\_\+benchmarks}} (json1, json2)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_ae56bed07bd2b903064f8630d83ae947b}{get\+\_\+timedelta\+\_\+field\+\_\+as\+\_\+seconds}} (benchmark, field\+\_\+name)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_a67414a296dd6d0800631e598149f00e1}{calculate\+\_\+geomean}} (json)
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_aa2d6d5a6a35bb17ede05d85a126a4d73}\label{namespacegbench_1_1report_aa2d6d5a6a35bb17ede05d85a126a4d73}} 
+def {\bfseries extract\+\_\+field} (partition, field\+\_\+name)
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a5cd07b26956355efe33554eaef5b9491}\label{namespacegbench_1_1report_a5cd07b26956355efe33554eaef5b9491}} 
+def {\bfseries calc\+\_\+utest} (timings\+\_\+cpu, timings\+\_\+time)
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a8b6a66137fa7ad71ce395e2b86694b80}\label{namespacegbench_1_1report_a8b6a66137fa7ad71ce395e2b86694b80}} 
+def {\bfseries print\+\_\+utest} (bc\+\_\+name, utest, utest\+\_\+alpha, first\+\_\+col\+\_\+width, use\+\_\+color=True)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_a5196a81eac594aea32878e47950a40bc}{get\+\_\+difference\+\_\+report}} (json1, json2, utest=False)
+\item 
+def \mbox{\hyperlink{namespacegbench_1_1report_a502689ba0e5e63e6cdbecc1e5c7ea084}{print\+\_\+difference\+\_\+report}} (json\+\_\+diff\+\_\+report, include\+\_\+aggregates\+\_\+only=False, utest=False, utest\+\_\+alpha=0.\+05, use\+\_\+color=True)
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a725c5896e051f241a4a027720dcfc2c2}\label{namespacegbench_1_1report_a725c5896e051f241a4a027720dcfc2c2}} 
+def {\bfseries assert\+\_\+utest} (unittest\+\_\+instance, lhs, rhs)
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a5b1e1e6140f106fc8a0dff37664c33a6}\label{namespacegbench_1_1report_a5b1e1e6140f106fc8a0dff37664c33a6}} 
+def {\bfseries assert\+\_\+measurements} (unittest\+\_\+instance, lhs, rhs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a4bd67facb35a4e21c5d8344474b54bf9}\label{namespacegbench_1_1report_a4bd67facb35a4e21c5d8344474b54bf9}} 
+{\bfseries B\+C\+\_\+\+N\+O\+NE}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_ad8e89e02bcd8466734741dc7f93f57a1}\label{namespacegbench_1_1report_ad8e89e02bcd8466734741dc7f93f57a1}} 
+{\bfseries B\+C\+\_\+\+M\+A\+G\+E\+N\+TA}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_aae109129b59010ee02cbafd4a81a006b}\label{namespacegbench_1_1report_aae109129b59010ee02cbafd4a81a006b}} 
+{\bfseries B\+C\+\_\+\+C\+Y\+AN}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a0ae8f210544c77fa9bff535da3311276}\label{namespacegbench_1_1report_a0ae8f210544c77fa9bff535da3311276}} 
+{\bfseries B\+C\+\_\+\+O\+K\+B\+L\+UE}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_af77960071a46be2e9dd40840bddade55}\label{namespacegbench_1_1report_af77960071a46be2e9dd40840bddade55}} 
+{\bfseries B\+C\+\_\+\+O\+K\+G\+R\+E\+EN}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a726a05e958574118db355abcd7c945fc}\label{namespacegbench_1_1report_a726a05e958574118db355abcd7c945fc}} 
+{\bfseries B\+C\+\_\+\+H\+E\+A\+D\+ER}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_abbd4e7995b504671c4c0977cf6847c53}\label{namespacegbench_1_1report_abbd4e7995b504671c4c0977cf6847c53}} 
+{\bfseries B\+C\+\_\+\+W\+A\+R\+N\+I\+NG}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a424090a008a5f71f7e3bf9e746ef2d25}\label{namespacegbench_1_1report_a424090a008a5f71f7e3bf9e746ef2d25}} 
+{\bfseries B\+C\+\_\+\+W\+H\+I\+TE}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a4680db7ad759c343af20b9c2283edc2d}\label{namespacegbench_1_1report_a4680db7ad759c343af20b9c2283edc2d}} 
+{\bfseries B\+C\+\_\+\+F\+A\+IL}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a992f881c9b9331643383645508277090}\label{namespacegbench_1_1report_a992f881c9b9331643383645508277090}} 
+{\bfseries B\+C\+\_\+\+E\+N\+DC}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_ac20cc3ebea2a11b8be3b26bd45ace356}\label{namespacegbench_1_1report_ac20cc3ebea2a11b8be3b26bd45ace356}} 
+{\bfseries B\+C\+\_\+\+B\+O\+LD}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_adccf0ccd28add3e7612494eab11a3d6b}\label{namespacegbench_1_1report_adccf0ccd28add3e7612494eab11a3d6b}} 
+{\bfseries B\+C\+\_\+\+U\+N\+D\+E\+R\+L\+I\+NE}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a6a77d4d1766f60073b29bf8a0f11bd37}\label{namespacegbench_1_1report_a6a77d4d1766f60073b29bf8a0f11bd37}} 
+{\bfseries U\+T\+E\+S\+T\+\_\+\+M\+I\+N\+\_\+\+R\+E\+P\+E\+T\+I\+T\+I\+O\+NS}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_a4e51374c5cc5ca579669f9e46b0ac980}\label{namespacegbench_1_1report_a4e51374c5cc5ca579669f9e46b0ac980}} 
+{\bfseries U\+T\+E\+S\+T\+\_\+\+O\+P\+T\+I\+M\+A\+L\+\_\+\+R\+E\+P\+E\+T\+I\+T\+I\+O\+NS}
+\item 
+\mbox{\Hypertarget{namespacegbench_1_1report_ae449738850b61c6a0cbbf12da9ce2c0b}\label{namespacegbench_1_1report_ae449738850b61c6a0cbbf12da9ce2c0b}} 
+{\bfseries U\+T\+E\+S\+T\+\_\+\+C\+O\+L\+\_\+\+N\+A\+ME}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}report.py - Utilities for reporting statistics about benchmark results
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegbench_1_1report_ab54bf3557c03f4d6cff9508b6f19a04e}\label{namespacegbench_1_1report_ab54bf3557c03f4d6cff9508b6f19a04e}} 
+\index{gbench.report@{gbench.report}!calculate\_change@{calculate\_change}}
+\index{calculate\_change@{calculate\_change}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{calculate\_change()}{calculate\_change()}}
+{\footnotesize\ttfamily def gbench.\+report.\+calculate\+\_\+change (\begin{DoxyParamCaption}\item[{}]{old\+\_\+val,  }\item[{}]{new\+\_\+val }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a float representing the decimal change between old_val and new_val.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegbench_1_1report_a67414a296dd6d0800631e598149f00e1}\label{namespacegbench_1_1report_a67414a296dd6d0800631e598149f00e1}} 
+\index{gbench.report@{gbench.report}!calculate\_geomean@{calculate\_geomean}}
+\index{calculate\_geomean@{calculate\_geomean}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{calculate\_geomean()}{calculate\_geomean()}}
+{\footnotesize\ttfamily def gbench.\+report.\+calculate\+\_\+geomean (\begin{DoxyParamCaption}\item[{}]{json }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract all real/cpu times from all the benchmarks as seconds,
+and calculate their geomean.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegbench_1_1report_a935422f9f080f96a4e0b141a9a5fe399}\label{namespacegbench_1_1report_a935422f9f080f96a4e0b141a9a5fe399}} 
+\index{gbench.report@{gbench.report}!color\_format@{color\_format}}
+\index{color\_format@{color\_format}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{color\_format()}{color\_format()}}
+{\footnotesize\ttfamily def gbench.\+report.\+color\+\_\+format (\begin{DoxyParamCaption}\item[{}]{use\+\_\+color,  }\item[{}]{fmt\+\_\+str,  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the result of 'fmt_str.format(*args, **kwargs)' after transforming
+'args' and 'kwargs' according to the value of 'use_color'. If 'use_color'
+is False then all color codes in 'args' and 'kwargs' are replaced with
+the empty string.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegbench_1_1report_a4d2cf4810d465353a6e17d9217bda64b}\label{namespacegbench_1_1report_a4d2cf4810d465353a6e17d9217bda64b}} 
+\index{gbench.report@{gbench.report}!filter\_benchmark@{filter\_benchmark}}
+\index{filter\_benchmark@{filter\_benchmark}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{filter\_benchmark()}{filter\_benchmark()}}
+{\footnotesize\ttfamily def gbench.\+report.\+filter\+\_\+benchmark (\begin{DoxyParamCaption}\item[{}]{json\+\_\+orig,  }\item[{}]{family,  }\item[{}]{replacement = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply a filter to the json, and only leave the 'family' of benchmarks.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegbench_1_1report_a7e41e0bde62503f68727e532aa0c4000}\label{namespacegbench_1_1report_a7e41e0bde62503f68727e532aa0c4000}} 
+\index{gbench.report@{gbench.report}!find\_longest\_name@{find\_longest\_name}}
+\index{find\_longest\_name@{find\_longest\_name}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{find\_longest\_name()}{find\_longest\_name()}}
+{\footnotesize\ttfamily def gbench.\+report.\+find\+\_\+longest\+\_\+name (\begin{DoxyParamCaption}\item[{}]{benchmark\+\_\+list }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the length of the longest benchmark name in a given list of
+benchmark JSON objects
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegbench_1_1report_a5196a81eac594aea32878e47950a40bc}\label{namespacegbench_1_1report_a5196a81eac594aea32878e47950a40bc}} 
+\index{gbench.report@{gbench.report}!get\_difference\_report@{get\_difference\_report}}
+\index{get\_difference\_report@{get\_difference\_report}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{get\_difference\_report()}{get\_difference\_report()}}
+{\footnotesize\ttfamily def gbench.\+report.\+get\+\_\+difference\+\_\+report (\begin{DoxyParamCaption}\item[{}]{json1,  }\item[{}]{json2,  }\item[{}]{utest = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate and report the difference between each test of two benchmarks
+runs specified as 'json1' and 'json2'. Output is another json containing
+relevant details for each test run.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegbench_1_1report_ae56bed07bd2b903064f8630d83ae947b}\label{namespacegbench_1_1report_ae56bed07bd2b903064f8630d83ae947b}} 
+\index{gbench.report@{gbench.report}!get\_timedelta\_field\_as\_seconds@{get\_timedelta\_field\_as\_seconds}}
+\index{get\_timedelta\_field\_as\_seconds@{get\_timedelta\_field\_as\_seconds}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{get\_timedelta\_field\_as\_seconds()}{get\_timedelta\_field\_as\_seconds()}}
+{\footnotesize\ttfamily def gbench.\+report.\+get\+\_\+timedelta\+\_\+field\+\_\+as\+\_\+seconds (\begin{DoxyParamCaption}\item[{}]{benchmark,  }\item[{}]{field\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get value of field_name field of benchmark, which is time with time unit
+time_unit, as time in seconds.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegbench_1_1report_af0e4627970d95b1facfecd61974dac58}\label{namespacegbench_1_1report_af0e4627970d95b1facfecd61974dac58}} 
+\index{gbench.report@{gbench.report}!get\_unique\_benchmark\_names@{get\_unique\_benchmark\_names}}
+\index{get\_unique\_benchmark\_names@{get\_unique\_benchmark\_names}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{get\_unique\_benchmark\_names()}{get\_unique\_benchmark\_names()}}
+{\footnotesize\ttfamily def gbench.\+report.\+get\+\_\+unique\+\_\+benchmark\+\_\+names (\begin{DoxyParamCaption}\item[{}]{json }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}While *keeping* the order, give all the unique 'names' used for benchmarks.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegbench_1_1report_a62715b3145ef8b278588580770637704}\label{namespacegbench_1_1report_a62715b3145ef8b278588580770637704}} 
+\index{gbench.report@{gbench.report}!intersect@{intersect}}
+\index{intersect@{intersect}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily def gbench.\+report.\+intersect (\begin{DoxyParamCaption}\item[{}]{list1,  }\item[{}]{list2 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given two lists, get a new list consisting of the elements only contained
+in *both of the input lists*, while preserving the ordering.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegbench_1_1report_a4ea8e28af8a9d6c0e0cf01a6f254ec70}\label{namespacegbench_1_1report_a4ea8e28af8a9d6c0e0cf01a6f254ec70}} 
+\index{gbench.report@{gbench.report}!partition\_benchmarks@{partition\_benchmarks}}
+\index{partition\_benchmarks@{partition\_benchmarks}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{partition\_benchmarks()}{partition\_benchmarks()}}
+{\footnotesize\ttfamily def gbench.\+report.\+partition\+\_\+benchmarks (\begin{DoxyParamCaption}\item[{}]{json1,  }\item[{}]{json2 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}While preserving the ordering, find benchmarks with the same names in
+both of the inputs, and group them.
+(i.e. partition/filter into groups with common name)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegbench_1_1report_a502689ba0e5e63e6cdbecc1e5c7ea084}\label{namespacegbench_1_1report_a502689ba0e5e63e6cdbecc1e5c7ea084}} 
+\index{gbench.report@{gbench.report}!print\_difference\_report@{print\_difference\_report}}
+\index{print\_difference\_report@{print\_difference\_report}!gbench.report@{gbench.report}}
+\doxysubsubsection{\texorpdfstring{print\_difference\_report()}{print\_difference\_report()}}
+{\footnotesize\ttfamily def gbench.\+report.\+print\+\_\+difference\+\_\+report (\begin{DoxyParamCaption}\item[{}]{json\+\_\+diff\+\_\+report,  }\item[{}]{include\+\_\+aggregates\+\_\+only = {\ttfamily False},  }\item[{}]{utest = {\ttfamily False},  }\item[{}]{utest\+\_\+alpha = {\ttfamily 0.05},  }\item[{}]{use\+\_\+color = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate and report the difference between each test of two benchmarks
+runs specified as 'json1' and 'json2'.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,78 @@
+\hypertarget{classbenchmark_1_1ConsoleReporter}{}\doxysection{benchmark\+::Console\+Reporter Class Reference}
+\label{classbenchmark_1_1ConsoleReporter}\index{benchmark::ConsoleReporter@{benchmark::ConsoleReporter}}
+
+
+Inheritance diagram for benchmark\+::Console\+Reporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classbenchmark_1_1ConsoleReporter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for benchmark\+::Console\+Reporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classbenchmark_1_1ConsoleReporter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_ae1dc9c16b67b70e2c85ef1f5104cb4e0}\label{classbenchmark_1_1ConsoleReporter_ae1dc9c16b67b70e2c85ef1f5104cb4e0}} 
+enum {\bfseries Output\+Options} \{ \newline
+{\bfseries O\+O\+\_\+\+None} = 0, 
+{\bfseries O\+O\+\_\+\+Color} = 1, 
+{\bfseries O\+O\+\_\+\+Tabular} = 2, 
+{\bfseries O\+O\+\_\+\+Color\+Tabular} = O\+O\+\_\+\+Color $\vert$ O\+O\+\_\+\+Tabular, 
+\newline
+{\bfseries O\+O\+\_\+\+Defaults} = O\+O\+\_\+\+Color\+Tabular
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a30fbb5da613713aabc8917cfad31861a}\label{classbenchmark_1_1ConsoleReporter_a30fbb5da613713aabc8917cfad31861a}} 
+{\bfseries Console\+Reporter} (Output\+Options opts\+\_\+=O\+O\+\_\+\+Defaults)
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_afc41a2d5ac189fa2f0e609b93d46180c}\label{classbenchmark_1_1ConsoleReporter_afc41a2d5ac189fa2f0e609b93d46180c}} 
+virtual bool {\bfseries Report\+Context} (const \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Context}{Context}} \&context) B\+E\+N\+C\+H\+M\+A\+R\+K\+\_\+\+O\+V\+E\+R\+R\+I\+DE
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_ae4ded08afd96d7f9963c9d8eecf1b9ba}\label{classbenchmark_1_1ConsoleReporter_ae4ded08afd96d7f9963c9d8eecf1b9ba}} 
+virtual void {\bfseries Report\+Runs} (const std\+::vector$<$ \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}} $>$ \&reports) B\+E\+N\+C\+H\+M\+A\+R\+K\+\_\+\+O\+V\+E\+R\+R\+I\+DE
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a3759516cbd523319ffbd121514cfc7c0}\label{classbenchmark_1_1ConsoleReporter_a3759516cbd523319ffbd121514cfc7c0}} 
+virtual void {\bfseries Print\+Run\+Data} (const \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}} \&report)
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a9a039ddb97f3321309db8120c176f4d0}\label{classbenchmark_1_1ConsoleReporter_a9a039ddb97f3321309db8120c176f4d0}} 
+virtual void {\bfseries Print\+Header} (const \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}} \&report)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_ae73d452f97f5be83f59de1ab7935d03d}\label{classbenchmark_1_1ConsoleReporter_ae73d452f97f5be83f59de1ab7935d03d}} 
+Output\+Options {\bfseries output\+\_\+options\+\_\+}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a70035000337728074b93dfb9a95a7110}\label{classbenchmark_1_1ConsoleReporter_a70035000337728074b93dfb9a95a7110}} 
+size\+\_\+t {\bfseries name\+\_\+field\+\_\+width\+\_\+}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a99262481c424bc54177cc95df96ae34d}\label{classbenchmark_1_1ConsoleReporter_a99262481c424bc54177cc95df96ae34d}} 
+User\+Counters {\bfseries prev\+\_\+counters\+\_\+}
+\item 
+\mbox{\Hypertarget{classbenchmark_1_1ConsoleReporter_a84683025b8ef739f751203e058c2544e}\label{classbenchmark_1_1ConsoleReporter_a84683025b8ef739f751203e058c2544e}} 
+bool {\bfseries printed\+\_\+header\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/mary/\+Vega\+Program\+Engineering\+\_\+2024/build/\+\_\+deps/googlebenchmark-\/src/include/benchmark/benchmark.\+h\item 
+/home/mary/\+Vega\+Program\+Engineering\+\_\+2024/build/\+\_\+deps/googlebenchmark-\/src/src/console\+\_\+reporter.\+cc\end{DoxyCompactItemize}
