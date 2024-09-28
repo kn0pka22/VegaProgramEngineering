@@ -51,7 +51,7 @@ PROJECT_BRIEF          =
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           =
+PROJECT_LOGO           =  docs/html
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is
@@ -1144,7 +1144,7 @@ CLANG_OPTIONS          =
 CLANG_DATABASE_PATH    =
 
 #---------------------------------------------------------------------------
-# Configuration options related to the alphabetical class index
+# Configuration options related to the alphabetical class 
 #---------------------------------------------------------------------------
 
 # If the ALPHABETICAL_INDEX tag is set to YES, an alphabetical index of all
