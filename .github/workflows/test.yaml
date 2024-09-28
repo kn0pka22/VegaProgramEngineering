@@ -20,8 +20,8 @@ jobs:
           path: |
             build/main
             build/tests
-            build/benchmarks  # Убедитесь, что этот файл существует
-
+            build/benchmarks 
+            
   tests:
     needs: build
     runs-on: ubuntu-latest
@@ -32,6 +32,17 @@ jobs:
 
       - run: ls -la  # Проверка содержимого каталога перед запуском тестов
       - run: chmod +x tests && ./tests
+
+  benchmarks:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: binaries
+
+      - run: ls -la  # Проверка содержимого каталога перед запуском тестов
+      - run: chmod +x benchmarks && ./benchmarks
 
   run:
     needs: build
@@ -44,14 +55,14 @@ jobs:
       - run: ls -la  # Проверка содержимого каталога перед запуском main
       - run: chmod +x main && ./main 2 7
 
-  benchmarks:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: binaries
+  # benchmarks:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/download-artifact@v4
+  #       with:
+  #         name: binaries
 
-      - run: pwd  # Проверка текущего рабочего каталога
-      - run: ls -la  # Проверка содержимого каталога перед запуском benchmarks
-      - run: chmod +x benchmarks && ./benchmarks
+  #     - run: pwd  # Проверка текущего рабочего каталога
+  #     - run: ls -la  # Проверка содержимого каталога перед запуском benchmarks
+  #     - run: chmod +x benchmarks && ./benchmarks
